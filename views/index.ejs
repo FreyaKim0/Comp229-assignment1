@@ -6,7 +6,7 @@
     <!--CSS section-->
    
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' /> <!--bootstrapt must before app.css for popover-->
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' />  
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel='stylesheet' href='/content/app.css' />
     <link rel='stylesheet' href='/content/full-width.css' />
     <link rel='icon' type= 'image/x-icon' href ='/assets/images/favicon.ico'>
@@ -96,20 +96,10 @@
   </div> 
  
    <!--JS section-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script> <!--Jquery must before bootstrap for popover-->  
   <script src='/scripts/app.js'></script>
   <script src='/scripts/nav.js'></script>
-  Ways to get popper.js: Package, CDN, and Local file
-The best way depends on whether you have a project with a package manager like npm.
-
-Package manager
-If you're using a package manager, use it to get popper.js like this:
-
-npm install popper.js --save
-CDN
-For a prototype or playground environment (like http://codepen.io) or may just want a url to a CDN file:
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
   </body>
 
