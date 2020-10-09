@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title> <%= title %> </title>
     <!--CSS section-->
-   
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' /> <!--bootstrapt must before app.css for popover-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' /> 
     <link rel='stylesheet' href='/content/app.css' />
     <link rel='stylesheet' href='/content/full-width.css' />
+    <link rel='stylesheet' href='/content/contact.css' /> 
     <link rel='icon' type= 'image/x-icon' href ='/assets/images/favicon.ico'>
     <!--CSS links for specific content-->
     <%if (title == "ABOUT") { %><link rel="stylesheet" href="/content/about.css"><% } %>
@@ -96,11 +95,11 @@
   </div> 
  
    <!--JS section-->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script> <!--Jquery must before bootstrap for popover-->  
+  <script src='/jquery/dist/jquery.min.js'></script> <!--Jquery must before bootstrap for popover-->  
   <script src='/scripts/app.js'></script>
   <script src='/scripts/nav.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+  <script src='/popper.js/dist/umd/popper.min.js'></script>
+  <script src='/bootstrap/dist/js/bootstrap.min.js'></script>
   </body>
 
 </html>
