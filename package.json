@@ -1,9 +1,13 @@
 {
   "name": "assignment1",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^12.00.0",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -12,5 +16,18 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "assignment1",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreyaKim0/assignment1.git"
+  },
+  "author": "\"xutung jin\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreyaKim0/assignment1/issues"
+  },
+  "homepage": "https://github.com/FreyaKim0/assignment1#readme"
 }
