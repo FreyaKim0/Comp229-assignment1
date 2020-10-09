@@ -1,0 +1,52 @@
+/*-----XuTung Jin 301111889------*/
+/*-------contact page css--------*/
+/*---------2020-10-09------------*/
+
+body{
+  background-image: "/assets/images/cover.jpg";
+}
+#mail {
+  position: relative;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  height: 90%;
+}
+.mail_wrap {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /*if you want to crop the image*/
+}
+.mail_wrap:before {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: url("/assets/images/contact.jpg");
+  opacity: 0.2;
+}
+.button_css {
+  line-height: 5px;
+  font-size: 15px;
+  height: 30px;
+}
+@media (min-width: 1190px) {
+  .mail_wrap {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(49, 110, 151, 0);
+    width: auto;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /*if you want to crop the image*/
+    width: 400px;
+  }
+  .mail_wrap {
+    height: 70vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /*if you want to crop the image*/
+  }
+}

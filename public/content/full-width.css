@@ -1,0 +1,95 @@
+/*-----XuTung Jin 301111889---------------*/
+/*--Header css for screen width > 1190px--*/
+/*----------------2020-10-09--------------*/
+
+@media (min-width: 1190px) {
+  #nameBanner {
+    color: rgb(88, 86, 86);
+  }
+  #grid_placeholder {
+    display: block;
+    width: 100%;
+  }
+  #content {
+    overflow: auto;
+    background-color: #F2F4F5;
+    position: relative;
+  }
+  #main {
+    display: grid;
+  }
+  .main_wrapper {
+    grid-template-columns: 20% 80%;
+    display: grid;
+  }
+  .main_grid_constraint {
+    text-align: left;
+    line-height: 40px;
+  }
+  #navbarSupportedContent {
+    padding-top: 15px;
+  }
+  #pictureDiv {
+    padding-left: 13px;
+    padding-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  #hamburgerDiv {
+    border-width: 0px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+  }
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    min-width: 250px;
+    min-height: 650px;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-collapse {
+    padding-left: 0;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: -20px;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+  #header_in_main_wrapper {
+    display: block;
+  }
+  .contactButton {
+    float: none;
+  }
+  #hamburger_btn {
+    display: none;
+  }
+  #pictureDiv {
+    padding-top: 20px;
+  }
+}

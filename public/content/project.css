@@ -1,0 +1,169 @@
+/*-----XuTung Jin 301111889--------*/
+/*-------project page css----------*/
+/*---------2020-10-09--------------*/
+
+/*icon images*/
+.service_img {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  height: 450px;
+  width: 320px;
+}
+
+/*text*/
+.text_s {
+  padding-left: 7px;
+  font-weight: lighter;
+  line-height: 18px;
+  font-family: "Open sans", sans-serif;
+  color: #292828;
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.grey {
+  background-color: #d3caca4d;
+  padding-left: 7px;
+  font-weight: lighter;
+  line-height: 18px;
+  font-family: "Open sans", sans-serif;
+  color: #292828;
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*text columns*/
+#wrapper {
+  padding: 10px;
+  display: flex;
+  width: auto;
+}
+#c1,
+#c3 {
+  width: 49%;
+  height: 130px;
+}
+#c2 {
+  margin-top: 5px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-left: 1px solid gray;
+  height: 110px;
+}
+#c4 {
+  margin-top: 30px;
+}
+
+/*boxes*/
+/*bigger screen*/
+@media (min-width: 850px) {
+  .service_div {
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+  }
+  .left {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    margin-top: 35px;
+    float: right;
+    width: 40%;
+  }
+  .divider {
+    height: 35px;
+  }
+  .right {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-top: 35px;
+    float: left;
+    width: 60%;
+
+    height: 450px;
+    text-align: left;
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(255, 255, 255);
+  }
+  .divider {
+    float: left;
+    width: 60%;
+  }
+  .service_img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 450px;
+    max-width: 500px;
+    overflow: hidden;
+  }
+}
+
+/*smaller screen*/
+@media only screen and (min-width: 1px) and (max-width: 849px) {
+  .service_img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 100%;
+    width: 100%;
+  }
+  .text_s {
+    padding-right: 5px;
+  }
+  #c1,
+  #c2,
+  #c3,
+  #wrapper {
+    height: auto;
+  }
+  #wrapper {
+    margin-top: 10px;
+    background-color: white;
+    padding: 0px;
+  }
+  .divider {
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 30px;
+  }
+  .right {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 20px;
+    height: auto;
+  }
+  .left {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 25px;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: auto;
+    overflow: hidden;
+  }
+  .title_s {
+    color: #000000;
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  #intro_s {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}

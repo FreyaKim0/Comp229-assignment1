@@ -1,0 +1,157 @@
+/*-----XuTung Jin 301111889--------*/
+/*-------service page css----------*/
+/*---------2020-10-09--------------*/
+
+/*icon images*/
+.service_img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 190px;
+  max-width: 200px;
+}
+
+/*text*/
+.text_s {
+  padding-left: 7px;
+  font-weight: lighter;
+  line-height: 18px;
+  font-family: "Open sans", sans-serif;
+  color: #292828;
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.grey {
+  background-color: #d3caca4d;
+  padding-left: 7px;
+
+  font-weight: lighter;
+  line-height: 18px;
+  font-family: "Open sans", sans-serif;
+  color: #292828;
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*text columns*/
+#wrapper {
+  padding: 10px;
+  padding-left: 0px;
+  display: flex;
+  width: auto;
+}
+#c1,
+#c3 {
+  width: 49%;
+  height: 130px;
+}
+#c2 {
+  margin-top: 5px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-left: 1px solid gray;
+  height: 110px;
+}
+
+/*boxes*/
+/*bigger screen*/
+@media (min-width: 850px) {
+  .service_div {
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+  }
+  .left {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 35px;
+    float: right;
+    width: 200px;
+  }
+  .divider1 {
+    float: right;
+    height: 35px;
+    width: 200px;
+  }
+  .divider2 {
+    float: left;
+    height: 35px;
+    width: 600px;
+  }
+  .right {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 35px;
+    float: left;
+    width: 600px;
+    height: 190px;
+    text-align: left;
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(255, 255, 255);
+  }
+  .service_img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 190px;
+    max-width: 200px;
+    overflow: hidden;
+  }
+}
+
+/*smaller screen*/
+@media only screen and (min-width: 1px) and (max-width: 849px) {
+  .service_img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 150px;
+    max-width: 100%;
+  }
+  #c1,
+  #c2,
+  #c3,
+  #wrapper {
+    background-color: white;
+    height: auto;
+  }
+  #wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+  }
+  .left {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #8fa26b;
+
+    margin-top: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .right {
+    height: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+  .title_s {
+    color: #000000;
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  #intro_s {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}

@@ -1,0 +1,201 @@
+/*-----XuTung Jin 301111889------*/
+/*-------Framework css-----------*/
+/*---------2020-10-09------------*/
+
+/*------footer sections------*/
+#footer {
+  font-size: 10px;
+  color:grey;
+  text-align: center;
+  display: block;
+  position: relative;
+  bottom: 0;
+  letter-spacing: 3px;
+}
+
+#grid_placeholder {
+  display: none;
+}
+
+/*------body sections------*/
+body {
+  background-color:#F3F4F5;
+  height: 100%;
+}
+
+#nameBanner {
+  background-color: #F3F4F5;
+  color: rgb(129, 125, 125);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  margin-top: 60px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 0.2;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+/*header+content*/
+.main_wrapper {
+  grid-template-columns: 100% 0%;
+  display: grid;
+}
+#header_in_main_wrapper {
+  display: none;
+}
+#content{
+  background-color: black;
+}
+#content_in_main_wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin:0;
+  padding:0;
+  position: relative;
+}
+
+#contactWrap {
+  width: 250px;
+  float: left;
+  text-align: left;
+}
+
+#contactInfo {
+  display: block;
+}
+
+.main_grid_constraint {
+  width: 100%;
+  text-align: center;
+  font-weight: verdana;
+  font-size: 17px;
+  line-height: 40px;
+}
+
+/*------header sections------*/
+*:focus {
+  outline: 0 !important;
+}
+
+/*Header-Popover*/
+.popover-header {
+  background-color: #eaeded;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+}
+.popover {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+/*Header-Picutres*/
+#navClass {
+  opacity: 1;
+  text-align: center;
+}
+#profilePicture {
+  border-radius: 90px;
+}
+
+/*Header-Name section*/
+#pictureDiv {
+  padding-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#name {
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+#title {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  margin-top: -25px;
+}
+
+/*Header-Hamgurger*/
+#hamburgerDiv {
+  margin-top: -20px;
+  display: block;
+  height: 40px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 0.01px;
+  border-bottom-color: gray;
+  border-top-color: gray;
+}
+.fas {
+  color: white;
+  font-size: 20px;
+  float: left;
+  margin-left: 0px;
+  opacity: 0.5;
+}
+.fab {
+  color: white;
+  font-size: 20px;
+  float: left;
+  margin-left: 0px;
+  opacity: 0.5;
+}
+.navbar-toggler {
+  padding: 2px;
+}
+.navbar-toggler-icon {
+  width: 15px;
+  height: 15px;
+}
+
+/*Header-Nav*/
+#sideNav {
+  background-color:#252934f8;
+  width: auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /*if you want to crop the image*/
+}
+#sideNav:before{
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: url("/assets/images/background.jpg");
+  opacity:0.4;;
+  background-color: #252934c4;
+}
+#sideNav {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  line-height: 1cm;
+}
+#sideNav .navbar-toggler:focus {
+  outline-color: teal;
+}
+#navbarDropdown .nav-link dropdown-toggle {
+  color: pink;
+}
+.contactButton {
+  opacity: 0.5;
+  background-color: transparent;
+  border-width: 0px;
+  margin-right: 5px;
+  float: left;
+}
+.contactButton:hover {
+  opacity: 1;
+}
+.contactButton:focus {
+  opacity: 1;
+  border-width: 0px;
+}

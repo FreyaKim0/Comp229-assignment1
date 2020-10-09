@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> <%= title %> </title>
+    <!--CSS section-->
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' /> 
+    <link rel='stylesheet' href='/content/app.css' />
+    <link rel='stylesheet' href='/content/full-width.css' />
+    <link rel='stylesheet' href='/content/contact.css' /> 
+    <link rel='icon' type= 'image/x-icon' href ='/assets/images/favicon.ico'>
+  </head>
+
+  <body>
+  <!--Partial:header-->
+  <%- include('./partials/header.ejs') %>
+    
+  <!--Partial:content and footer-->
+  <div id="main" class="main_wrapper">
+       
+    <div id="grid_placeholder" class="main_grid_constraint">
+    </div> 
+    
+    <div id="content_in_main_wrapper" class="main_grid_constraint">  
+    <%- include('./partials/content.ejs') %>
+
+    <!----------------------->
+    <!------page content----->
+    <!----------------------->
+    <div class="mail_wrap">
+      <div id="mail"><br>
+      <table>
+        <tr>
+          <td style="height: 45px">
+          <input name="name" 
+                 id="contact_name"
+                  placeholder=" Name" 
+                  type="text" 
+                  style="width: 300px" >
+          </td>
+        </tr>
+        <tr>
+          <td style="height: 45px">
+          <input name="phone"
+                 id="contact_phone" 
+                  placeholder=" Phone" 
+                  type="text" 
+                  style="width: 300px">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input name="mail" 
+                  id="contact_mail" 
+                  placeholder=" Mail" 
+                  type="text" 
+                  style="width: 300px">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+          <textarea id="contact_message" 
+                    style="width: 300px"
+                    rows="4" 
+                    placeholder=" Message"></textarea>
+          </td>   
+          </form>
+        </tr>
+         <tr>
+          <td>
+       <button class="button_css" id="cancel_contact">Clear</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="button_css" id="send_contact">Submit</button><br><br>
+          
+          </td>   
+    
+        </tr>
+      </table>  
+      </div>
+    </div>
+    <!----------------------->
+    <!--content finished----->
+    <!----------------------->
+
+  <%- include('./partials/footer.ejs') %>
+  </div>
+  </div> 
+  
+  <!--JS section-->
+  <script src='/jquery/dist/jquery.min.js'></script> <!--Jquery must before bootstrap for popover-->  
+  <script src='/scripts/app.js'></script>
+  <script src='/scripts/nav.js'></script>
+  <script src='/popper.js/dist/umd/popper.min.js'></script>
+  <script src='/bootstrap/dist/js/bootstrap.min.js'></script>
+  </body>
+
+</html>
