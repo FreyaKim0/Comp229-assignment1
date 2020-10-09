@@ -18,7 +18,7 @@
     "morgan": "~1.9.1"
   },
   "description": "assignment1",
-  "main": "index.js",
+  "main": "server.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
