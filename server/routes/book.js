@@ -28,7 +28,7 @@ router.post('/add',(req,res,next)=>{
         "name":req.body.name,
         "author":req.body.author,
         "published":req.body.published,
-        "descriptiong":req.body.description
+        "description":req.body.description
     });
 
     Book.create(newBook,(err,Book)=>{
@@ -65,7 +65,7 @@ router.post('/edit/:id',(req,res,next)=>{
         "name":req.body.name,
         "author":req.body.author,
         "published":req.body.published,
-        "descriptiong":req.body.description
+        "description":req.body.description
     });
     Book.updateOne({_id:id},updatedBook,(err)=>{
         if(err){
