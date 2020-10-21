@@ -5,11 +5,26 @@
 // IIFE -- Immediately Inkoked Function Expression
 "use strict";
 (function(){
+
     function Start()
     {
        console.log("App started...");
 
-       if(document.title === "CONTACT")
+       let deleteButtons = document.querySelectorAll('#cancel');
+       let i;
+
+       for (i = 0; i < deleteButtons.length; i++) {
+        deleteButtons[i].addEventListener('click',(event)=>{
+            if(!confirm("Are you sure?"))
+            {
+                event.preventDefault();
+                wondow.location.assign('/book-list');
+            }
+         });
+       }
+
+
+       /*       if(document.title === "CONTACT")
        {
            let sendButton = document.getElementById("send_contact");
            let cancelButton = document.getElementById("cancel_contact");
@@ -18,8 +33,6 @@
            let contact_phone = document.getElementById("contact_phone");
            let contact_mail = document.getElementById("contact_mail");
            let contact_message = document.getElementById("contact_message");
-           
-          
            
            cancelButton.addEventListener('click',(event) =>{
                event.preventDefault();
@@ -32,16 +45,15 @@
             console.info(`Name   :${contact_name.value}
 Phone  :${contact_phone.value}
 Mail   :${contact_mail.value}
-Message:${contact_message.value}
-`)
-          
-        })
-       }
+Message:${contact_message.value}`)         
+           })
+           }*/
     }
+
     window.addEventListener("load",Start);
     
-    let title = document.title;
-    console.log(`This is page: ${title}`);
+    //let title = document.title;
+    //console.log(`This is page: ${title}`);
 })(); 
 
 
