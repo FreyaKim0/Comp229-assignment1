@@ -7,16 +7,32 @@
   <div id="pictureDiv">
     <a href="/home" style="text-decoration: none">
        <nav class="navbar-brand js-scroll-trigger" id="navClass">
-         <a href="/home" style="text-decoration: none">
-            <img src="./assets/images/picture.jpg"
-                width="160"
-                height="160"
-                id="profilePicture"
-                loading="lazy"/>
-            <p id="name">XUTUNG&nbsp;&nbsp;JIN</p>
-            <p id="title">SOFTWARE&nbsp;&nbsp;ENGINEER</p>
-          </a>
-         </nav>
+          <% if (title == "EDIT ART") 
+              { %>  
+                  <a href="/home" style="text-decoration: none">        
+                        <img src="../../assets/images/picture.jpg"
+                                  width="160"
+                                  height="160"
+                                  id="profilePicture"
+                                  loading="lazy"/>   
+                  <p id="name">XUTUNG&nbsp;&nbsp;JIN</p>
+                  <p id="title">SOFTWARE&nbsp;&nbsp;ENGINEER</p>
+                  </a>     
+              <% } 
+              else
+              { %>
+                  <a href="/home" style="text-decoration: none">        
+                        <img src="../assets/images/picture.jpg"
+                                  width="160"
+                                  height="160"
+                                  id="profilePicture"
+                                  loading="lazy"/>   
+                  <p id="name">XUTUNG&nbsp;&nbsp;JIN</p>
+                  <p id="title">SOFTWARE&nbsp;&nbsp;ENGINEER</p>
+                  </a>    
+              <% }
+          %>     
+      </nav>
     </a>
   </div>
 
@@ -106,6 +122,10 @@
 
       <li class="nav-item">
         <a class="nav-link" href="/contact">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/book-list">Art</a>
       </li>
     </ul>
   </div>
