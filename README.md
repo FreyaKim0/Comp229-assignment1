@@ -1,15 +1,15 @@
 # Project-Portfolio-EJS
 
-This project demostrate my protforlio template and it is written in EJS. (framework only)
+This project demostrate my protforlio template and it is written in EJS. (framework only)<br>
 Heroku link:
-
-Practice Scope:
+<br><br>
+Skill Scope:
 * MCV framework
 * Bootstrap
 * EJS template
 * responsive webpage
 
-For viewing my formal portfolio , please check:
+For viewing my formal portfolio , please check:<br>
 
-Github:
+Github:<br>
 Heroku:
