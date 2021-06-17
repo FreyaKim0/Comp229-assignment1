@@ -9,10 +9,6 @@ module.exports.displayAboutPage = (req,res,next)=>{
     res.render('index',{title:'ABOUT'});
 }
 
-module.exports.displayArtPage = (req,res,next)=>{
-    res.render('index',{title:'ART'});
-}
-
 module.exports.displayServicePage = (req,res,next)=>{
     res.render('index',{title:'SERVICE'});
 }

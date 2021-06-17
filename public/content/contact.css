@@ -1,7 +1,3 @@
-/*-----XuTung Jin 301111889------*/
-/*-------contact page css--------*/
-/*---------2020-10-09------------*/
-
 body{
   background-image: "/assets/images/cover.jpg";
 }
@@ -17,7 +13,7 @@ body{
   width: 100%;
   position: relative;
   z-index: 1;
-  overflow: hidden; /*if you want to crop the image*/
+  overflow: hidden; 
 }
 .mail_wrap:before {
   z-index: -1;
@@ -32,6 +28,8 @@ body{
   font-size: 15px;
   height: 30px;
 }
+
+/*Bigger screen*/
 @media (min-width: 1190px) {
   .mail_wrap {
     margin-right: auto;

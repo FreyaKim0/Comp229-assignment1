@@ -1,7 +1,3 @@
-/*-----XuTung Jin 301111889------*/
-/*-------Framework css-----------*/
-/*---------2020-10-09------------*/
-
 /*------footer sections------*/
 #footer {
   font-size: 10px;
@@ -57,17 +53,14 @@ body {
   padding:0;
   position: relative;
 }
-
 #contactWrap {
   width: 250px;
   float: left;
   text-align: left;
 }
-
 #contactInfo {
   display: block;
 }
-
 .main_grid_constraint {
   width: 100%;
   text-align: center;

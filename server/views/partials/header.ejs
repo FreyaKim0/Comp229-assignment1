@@ -1,134 +1,133 @@
 <header>
   <!--Main Navigation-->
   <div class=box>
-  <nav class="navbar-expand-xl navbar-dark" id="sideNav">
-  
-  <!-- Image and text -->
-  <div id="pictureDiv">
-    <a href="/home" style="text-decoration: none">
-       <nav class="navbar-brand js-scroll-trigger" id="navClass">
-          <% if (title == "EDIT ART") 
-              { %>  
-                  <a href="/home" style="text-decoration: none">        
-                        <img src="../../assets/images/picture.jpg"
-                                  width="160"
-                                  height="160"
-                                  id="profilePicture"
-                                  loading="lazy"/>   
-                  <p id="name">XUTUNG&nbsp;&nbsp;JIN</p>
-                  <p id="title">SOFTWARE&nbsp;&nbsp;ENGINEER</p>
-                  </a>     
-              <% } 
-              else
-              { %>
-                  <a href="/home" style="text-decoration: none">        
-                        <img src="../assets/images/picture.jpg"
-                                  width="160"
-                                  height="160"
-                                  id="profilePicture"
-                                  loading="lazy"/>   
-                  <p id="name">XUTUNG&nbsp;&nbsp;JIN</p>
-                  <p id="title">SOFTWARE&nbsp;&nbsp;ENGINEER</p>
-                  </a>    
-              <% }
-          %>     
-      </nav>
-    </a>
+    <nav class="navbar-expand-xl navbar-dark" id="sideNav">
+
+      <!-- Image and text -->
+      <div id="pictureDiv">
+        <a href="/home" style="text-decoration: none">
+          <nav class="navbar-brand js-scroll-trigger" id="navClass">
+              <% if (title == "EDIT ART") 
+                  { %>  
+                      <a href="/home" style="text-decoration: none">        
+                            <img src="../../assets/images/picture.jpg"
+                                      width="160"
+                                      height="160"
+                                      id="profilePicture"
+                                      loading="lazy"/>   
+                      <p id="name">XUTUNG&nbsp;&nbsp;JIN</p>
+                      <p id="title">SOFTWARE&nbsp;&nbsp;ENGINEER</p>
+                      </a>     
+                  <% } 
+                  else
+                  { %>
+                      <a href="/home" style="text-decoration: none">        
+                            <img src="../assets/images/picture.jpg"
+                                      width="160"
+                                      height="160"
+                                      id="profilePicture"
+                                      loading="lazy"/>   
+                      <p id="name">XUTUNG&nbsp;&nbsp;JIN</p>
+                      <p id="title">SOFTWARE&nbsp;&nbsp;ENGINEER</p>
+                      </a>    
+                  <% }
+              %>     
+          </nav>
+        </a>
+      </div>
+
+      <!--contact buttons-->
+      <div id="hamburgerDiv">
+      <span>
+      <div id="contactInfo">
+        <!--Email button-->
+        <button id="mailButton"    
+                class="contactButton"
+                type="button" 
+                data-container="body" 
+                data-trigger="focus" 
+                data-toggle="popover" 
+                data-placement="top" 
+                title="xutungjin @gmail.com"
+                data-content="Copied to clipboard">
+        <i class="fas fa-envelope"></i>
+        </button>
+
+        <!--phone button-->
+        <button id="phoneButton" 
+                class="contactButton"
+                type="button" 
+                data-container="body" 
+                data-trigger="focus" 
+                data-toggle="popover" 
+                data-placement="top" 
+                title="+1 (647) 763-5785"
+                data-content="Copied to clipboard">
+        <i class="fas fa-phone-square"></i>
+        </button>
+
+        <!--GitHub-->
+        <button class="contactButton"
+                type="button" 
+                data-container="body" 
+                data-trigger="hover" 
+                data-toggle="popover" 
+                data-placement="top" 
+                data-content="Open GitHub in new Tab"
+                onclick=" window.open('https://github.com/FreyaKim0','_blank')"><i class="fab fa-github"></i></button>
+                  
+                <!--linkedIn-->
+        <button class="contactButton"
+                type="button" 
+                data-container="body" 
+                data-trigger="hover" 
+                data-toggle="popover" 
+                data-placement="top" 
+                data-content="Open LinkedIn in new Tab"
+                onclick=" window.open('http://www.linkedin.com/in/xutungjin','_blank')">
+        <i class="fab fa-linkedin"></i>
+        </button>
+      </div>
+
+        <!--Hamburger buttons-->
+        <button id="hamburger_btn"
+                    style="float: right"
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+        <span style="float: right" class="navbar-toggler-icon btn-sm"></span>
+        </button>
+      </span>
+      </div>
+
+      <!-- Dropdown List-->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/service">Service</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="projectDropDown" class="nav-link" href="/project">Project</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+
+
+        </ul>
+      </div>
+    
+    </nav>
   </div>
-
-  <!--contact buttons-->
- <div id="hamburgerDiv">
- <span>
- <div id="contactInfo">
-  <!--Email button-->
-  <button id="mailButton"    
-           class="contactButton"
-           type="button" 
-           data-container="body" 
-           data-trigger="focus" 
-           data-toggle="popover" 
-           data-placement="top" 
-           title="xutungjin @gmail.com"
-           data-content="Copied to clipboard">
-  <i class="fas fa-envelope"></i>
-  </button>
-
-  <!--phone button-->
-  <button id="phoneButton" 
-          class="contactButton"
-          type="button" 
-          data-container="body" 
-          data-trigger="focus" 
-          data-toggle="popover" 
-          data-placement="top" 
-          title="+1 (647) 763-5785"
-          data-content="Copied to clipboard">
-  <i class="fas fa-phone-square"></i>
-  </button>
-
-  <!--GitHub-->
-  <button class="contactButton"
-          type="button" 
-          data-container="body" 
-          data-trigger="hover" 
-          data-toggle="popover" 
-          data-placement="top" 
-          data-content="Open GitHub in new Tab"
-          onclick=" window.open('https://github.com/FreyaKim0','_blank')"><i class="fab fa-github"></i></button>
-            
-          <!--linkedIn-->
-  <button class="contactButton"
-          type="button" 
-          data-container="body" 
-          data-trigger="hover" 
-          data-toggle="popover" 
-          data-placement="top" 
-          data-content="Open LinkedIn in new Tab"
-          onclick=" window.open('http://www.linkedin.com/in/xutungjin','_blank')">
-  <i class="fab fa-linkedin"></i>
-  </button>
- </div>
-
-  <!--Hamburger buttons-->
-  <button id="hamburger_btn"
-              style="float: right"
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-  <span style="float: right" class="navbar-toggler-icon btn-sm"></span>
-  </button>
- </span>
- </div>
-
-  <!-- Dropdown List-->
-  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item">
-        <a class="nav-link" href="/service">Service</a>
-      </li>
-
-      <li class="nav-item">
-        <a id="projectDropDown" class="nav-link" href="/project">Project</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact</a>
-      </li>
-
-
-    </ul>
-  </div>
-  </nav>
-  </div>
-
- 
 </header>
