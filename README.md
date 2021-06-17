@@ -9,6 +9,6 @@ Skill Scope:<br>
 * EJS template
 * Responsive web page
 
-For viewing my formal portfolio , please check:<br>
+For viewing my formal portfolio , please check :<br>
 Github <br>
 Heroku 
