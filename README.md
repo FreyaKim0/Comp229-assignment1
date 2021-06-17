@@ -1,7 +1,7 @@
 # Project-Portfolio-EJS
 
 **This project demonstrates my portfolio template and it is written in EJS (framework only)**<br>
-**Heroku link** <br><br>
+**[View on Heroku](https://portfolio-ejs-template.herokuapp.com)**<br><br>
  
 Skill Scope:<br>
 * MVC framework
