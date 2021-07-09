@@ -12,5 +12,5 @@ Skill Scope:<br>
 * Responsive web page
 
 For viewing my formal portfolio , please check :<br>
-Github <br>
-Heroku 
+**[Github](https://github.com/FreyaKim0/Project-Shopping-Cart-Angular)**<br>
+**[Heroku](https://xu-tung-jin.herokuapp.com)**
